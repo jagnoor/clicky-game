@@ -78,10 +78,10 @@ class App extends Component {
         />
 
         <Title>
-        
-          Dr. Suess Memory test.. 
-          To win Click on all 9 images, without clicking on an image twice.
-          Click on an image to earn points, but DO NOT click on an image more than once!
+
+          Dr. Suess Memory test.. <br> </br>
+          To win Click on all 9 images, without clicking on an image twice. <br> </br>
+          Click on an image to earn points, but DO NOT click on an image more than once! <br> </br>
          "And will you succeed? Yes you will indeed! (98 and 3/4 percent guaranteed.)"
       
         </Title>
