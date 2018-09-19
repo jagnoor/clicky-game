@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "image": "https://user-images.githubusercontent.com/27736403/45720720-e522f100-bb6a-11e8-9f7f-3804d6841b60.png",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "https://user-images.githubusercontent.com/27736403/45720719-e48a5a80-bb6a-11e8-90f8-37b70fcdf820.png",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "https://user-images.githubusercontent.com/27736403/45720718-e48a5a80-bb6a-11e8-938c-f0f60a6abe97.png",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "https://user-images.githubusercontent.com/27736403/45720717-e48a5a80-bb6a-11e8-840c-a5fe8d0d1556.png",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "https://user-images.githubusercontent.com/27736403/45720716-e48a5a80-bb6a-11e8-9d82-b2c25dbc91a2.png",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "image": "https://user-images.githubusercontent.com/27736403/45720715-e48a5a80-bb6a-11e8-992e-61ad056756c5.png",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "image": "https://user-images.githubusercontent.com/27736403/45720713-e48a5a80-bb6a-11e8-928c-40c5274bf83c.png",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "image": "https://user-images.githubusercontent.com/27736403/45720712-e48a5a80-bb6a-11e8-81e6-784a00e52e61.png",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "image": "https://user-images.githubusercontent.com/27736403/45720711-e48a5a80-bb6a-11e8-9b44-12c03a02365e.png",
+      "clicked": false
+    }
+    
+  ]
+  
