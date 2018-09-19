@@ -78,6 +78,7 @@ class App extends Component {
         />
 
         <Title>
+        
           Dr. Suess Memory test.. 
           To win Click on all 9 images, without clicking on an image twice.
           Click on an image to earn points, but DO NOT click on an image more than once!
