@@ -71,7 +71,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Nav
-          title="React Clicky Game by Jag "
+          title="Memory based clicky Game by Jag "
           score={this.state.currentScore}
           topScore={this.state.topScore}
           correctIncorrect={this.state.correctIncorrect}
@@ -79,7 +79,9 @@ class App extends Component {
 
         <Title>
 
-          To win Click on all 9 images, without clicking on an image twice. {"\n"} 
+          To win Click on all 16 images, without clicking on an image twice. 
+
+         
           
           Click on an image to earn points, but DO NOT click on an image more than once! 
       
