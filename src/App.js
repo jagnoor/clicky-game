@@ -79,7 +79,7 @@ class App extends Component {
 
         <Title>
 
-          To win Click on all 9 images, without clicking on an image twice.
+          To win Click on all 9 images, without clicking on an image twice. {"\n"} 
           
           Click on an image to earn points, but DO NOT click on an image more than once! 
       
