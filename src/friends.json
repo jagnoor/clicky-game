@@ -1,7 +1,12 @@
   [
     {
       "id": 1,
-      "image": "hhttps://user-images.githubusercontent.com/27736403/45791616-0578ab80-bc50-11e8-8f27-9c3f3a77f71b.jpg",
+      "image": "https://user-images.githubusercontent.com/27736403/45791616-0578ab80-bc50-11e8-8f27-9c3f3a77f71b.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "https://user-images.githubusercontent.com/27736403/45791615-0578ab80-bc50-11e8-9806-df290af71dd1.gif",
       "clicked": false
     },
     {
