@@ -78,14 +78,11 @@ class App extends Component {
         />
 
         <Title>
-
-          To win Click on all 16 images, without clicking on an image twice. 
-
-         
-          
-          Click on an image to earn points, but DO NOT click on an image more than once! 
-      
+        Click on an image to earn points, but DO NOT click on an same image card repeatedly ! 
+        To win click on all images, without clicking on an image twice. 
+        
         </Title>
+        
         <Container>
           <Row>
             {this.state.friends.map(friend => (
