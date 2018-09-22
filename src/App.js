@@ -8,8 +8,7 @@ import Row from "./Row";
 import Column from "./Column";
 import friends from "./friends.json";
 import "./App.css";
-import ReactDOM from 'react-dom';
-import Countdown from 'react-countdown-now';
+
 
 // Random shuffle
 function randomFriends(array) {
@@ -21,7 +20,6 @@ function randomFriends(array) {
 };
 
 class App extends Component {
-  // Set this.state
   state = {
     friends,
     currentScore: 0,
@@ -32,9 +30,7 @@ class App extends Component {
 
   };
 
-  // componentDidMount() {
-  //   this.setInterval()
-  // }
+
 
   setInterval = () => {
     this.interval = setInterval(this.tick, 1000)
