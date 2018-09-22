@@ -26,7 +26,7 @@ class App extends Component {
     topScore: 0,
     correctIncorrect: "",
     clicked: [],
-    currentTime: 50,
+    currentTime: 10,
 
   };
 
@@ -53,7 +53,7 @@ class App extends Component {
       topScore: 0,
       correctIncorrect: "You guessed incorrectly!",
       clicked: [],
-      currentTime: 50,
+      currentTime: 10,
     });
     this.setInterval()
     this.handleShuffle();
