@@ -3,7 +3,7 @@ import "./Nav.css";
 import ReactDOM from 'react-dom';
 
 
-const Completionist = () => <span>Your time has run out, Better luck next time !</span>;
+// const Completionist = () => <span>Your time has run out, Better luck next time !</span>;
 
 
 
