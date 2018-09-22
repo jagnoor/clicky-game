@@ -1,19 +1,37 @@
 import React from "react";
 import "./Nav.css";
+import ReactDOM from 'react-dom';
+// import Countdown from 'react-countdown-now';
 
-const Nav = props => (
-  <nav>
-    <ul>
-      <li className="brand animated lightSpeedIn alignLeft">
-        <a href="/clicky-game/">{props.title}</a>
-      </li>
-      <li id="rw" >{props.correctIncorrect}</li>
+const Completionist = () => <span>Your time has run out, Better luck next time !</span>;
 
 
-      <li className="alignRight">Score - Top: {props.topScore} | Current: {props.score}</li>
+// const Nav = props => (
 
-    </ul>
-  </nav>
-);
+export default class Nav extends React.Component {
+  render() {
+    console.log('Nav was rerendered!')
+    return (
+      <nav>
+      <p>Time left: {this.props.currentTime}</p>
 
-export default Nav;
+      <ul>
+        <li className="brand animated lightSpeedIn alignLeft">
+          <a href="/clicky-game/">{this.props.title}</a>
+          </li>
+  
+        <li id="rw" >{this.props.correctIncorrect}</li>
+  
+  
+        <li className="alignRight">Score - Top: {this.props.topScore} | Current: {this.props.score}</li>
+
+  
+      </ul>
+    </nav>
+    )
+  }
+};
+
+
+
+// export default Nav;

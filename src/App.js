@@ -8,6 +8,8 @@ import Row from "./Row";
 import Column from "./Column";
 import friends from "./friends.json";
 import "./App.css";
+import ReactDOM from 'react-dom';
+import Countdown from 'react-countdown-now';
 
 // Random shuffle
 function randomFriends(array) {
@@ -26,9 +28,45 @@ class App extends Component {
     topScore: 0,
     correctIncorrect: "",
     clicked: [],
+    currentTime: 50,
+
   };
 
+  // componentDidMount() {
+  //   this.setInterval()
+  // }
+
+  setInterval = () => {
+    this.interval = setInterval(this.tick, 1000)
+  }
+
+  tick = () => {
+    if (this.state.currentTime > 0) {
+      this.setState({currentTime: this.state.currentTime - 1})
+    } else {
+      this.handleReset()
+    }
+  }
+
+  handleReset = () => {
+    console.log('handle reset was called!')
+    clearInterval(this.interval)
+
+    this.setState({
+      currentScore: 0,
+      topScore: 0,
+      correctIncorrect: "You guessed incorrectly!",
+      clicked: [],
+      currentTime: 50,
+    });
+    this.setInterval()
+    this.handleShuffle();
+  }
+
   handleClick = id => {
+    if (this.state.clicked.length === 0) {
+      this.handleReset()
+    }
     if (this.state.clicked.indexOf(id) === -1) {
       this.handleIncrement();
       this.setState({ clicked: this.state.clicked.concat(id) });
@@ -46,21 +84,13 @@ class App extends Component {
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
     }
-    else if (newScore === 12) {
+    else if (newScore === 19) {
       this.setState({ correctIncorrect: "You win!" });
     }
     this.handleShuffle();
   };
 
-  handleReset = () => {
-    this.setState({
-      currentScore: 0,
-      topScore: this.state.topScore,
-      correctIncorrect: "You guessed incorrectly!",
-      clicked: []
-    });
-    this.handleShuffle();
-  };
+
 
   handleShuffle = () => {
     let shuffledFriends = randomFriends(friends);
@@ -75,6 +105,9 @@ class App extends Component {
           score={this.state.currentScore}
           topScore={this.state.topScore}
           correctIncorrect={this.state.correctIncorrect}
+          handleReset={this.handleReset}
+          currentTime={this.state.currentTime}
+
         />
 
         <Title>
