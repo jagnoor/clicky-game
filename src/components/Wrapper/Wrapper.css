@@ -1,12 +1,8 @@
 .wrapper {
-    background: white;
-    background-color: white;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    overflow: auto; 
-    padding-bottom: 30px;
-    color: lavender;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}

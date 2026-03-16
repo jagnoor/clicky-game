@@ -1,7 +1,51 @@
-.title {
-    width: 100%;
-    text-align: right;
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 20px;
+.instructions-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
+.instructions-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.instructions-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .instructions-bar {
+    padding: 14px 28px;
+    margin: 0 auto;
   }
+
+  .instructions-icon {
+    font-size: 1.5rem;
+  }
+
+  .instructions-text {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .instructions-bar {
+    padding: 8px 12px;
+  }
+
+  .instructions-text {
+    font-size: 0.8rem;
+  }
+}
