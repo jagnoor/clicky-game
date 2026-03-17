@@ -1,6 +1,6 @@
 {
   "name": "clicky-game",
-  "homepage": "http://jagnoor.github.io/clicky-game",
+  "homepage": "https://jagnoor.github.io/clicky-game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.0"
+    "gh-pages": "^2.2.0"
   },
   "browserslist": {
     "production": [
